@@ -1,19 +1,19 @@
 html {
-	scroll-behavior: smooth;
-	font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
 }
 
 body {
-	color: var(--text-color);
-	font-family: var(--font-family-base);
-	font-size: var(--font-size-medium);
+    color: var(--text-color);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-medium);
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-base);
-
 }
 
 a {
-	color: #161616;
+    color: #161616;
+    text-decoration: none;
 }
 
 /* Liens contenant un href */
@@ -24,7 +24,7 @@ a[href] {
 /* Liens visités */
 a[href]:visited {
     font-style: italic;
-	color: inherit;
+    color: inherit;
 }
 
 /* Liens survolés */
@@ -38,11 +38,11 @@ a[href]:active {
 }
 
 .visually-hidden {
-	display: none;
+    display: none;
 }
 
 .card-category {
-	color: var(--color-primary);
+    color: var(--color-primary);
 }
 
 .section-header {
@@ -50,8 +50,8 @@ a[href]:active {
 }
 
 .section-tagline {
-	color: var(--color-primary);
-    font-family:var(--font-family--title);
+    color: var(--color-primary);
+    font-family: var(--font-family-title);
     text-transform: var(--section-tagline-transform);
     font-weight: var(--font-weight-bold);
 }
@@ -61,34 +61,35 @@ a[href]:active {
     font-size: var(--font-size-xx-large);
     font-weight: var(--font-weight-bold);
     margin: var(--section-title-margin);
-    color: var(--section-title-color)
+    color: var(--section-title-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: var(--font-family-title);
+    font-family: var(--font-family-title);
     font-weight: var(--font-weight-bold);
 }
 
 :root {
-  --color-primary: #D73953;
-  --color-black: #090909;
-  --color-white: #ffffff;
-  --color-light-grey: #f3f3f3;
-  --color-dark-grey: #353535;
-  --text-color: var(--color-primary);
-  --font-family-base: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-  --font-family-title: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
-  --font-size-small: 1.2rem;
-  --font-size-medium: 1.6rem;
-  --font-size-large: 1.8rem;
-  --font-size-x-large: 2.3rem;
-  --font-size-xx-large: 4.8rem;
-  --font-weight-regular: 400;
-  --font-weight-bold: 700;
-  --line-height-small: 1.2;
-  --line-height-base: 1.5;
-  --line-height-big: 1.8;
-  --section-title-margin: 0;
-  --section-title-color: var(--color-black);
-  --section-tagline-transform: uppercase;
+    --color-primary: #D73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-primary);
+    --font-family-base: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    --font-family-title: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --line-height-small: 1.2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+    --section-title-margin: 0;
+    --section-title-color: var(--color-black);
+    --section-header-align: center;
+    --section-tagline-transform: uppercase;
 }
