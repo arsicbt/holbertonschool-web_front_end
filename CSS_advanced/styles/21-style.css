@@ -59,6 +59,7 @@ pre {
 
 /* Text-level semantics
    ========================================================================== */
+
 /**
  * Remove the gray background on active links in IE 10.
  */
@@ -403,7 +404,6 @@ a:active {
 .section-footer{
   text-align: var(--section-footer-align);
   padding: var(--section-footer-padding);
-
 }
 
 .section-title{
@@ -443,7 +443,13 @@ ul.row{
   list-style: none;
 }
 
-*.col-1-3{
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-1-3{
   width: 33.33%;
 }
 
@@ -451,16 +457,10 @@ ul.row{
   width: 50%;
 }
 
-/* Simplify all col- classes */
 [class^="col-"] {
-    float: left;
-    padding: 0.5rem;
-}
+  float: left;
+  padding: 0.5rem;
 
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .footer-copyright{
