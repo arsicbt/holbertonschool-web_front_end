@@ -1,9 +1,9 @@
-/* 15 - Universal box-sizing */
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
-/* Smooth transitions when scrolling */
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
@@ -24,17 +24,15 @@ a:link {
     text-decoration: none;
 }
 
-/* Visited links */
 a:visited {
     font-style: italic;
+    color: inherit;
 }
 
-/* Hovered links */
 a:hover {
     text-decoration: underline;
 }
 
-/* Active links */
 a:active {
     background-color: var(--color-light-grey);
 }
@@ -49,6 +47,14 @@ a:active {
     color: var(--color-primary);
 }
 
+/* Container */
+.container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Section padding */
 .section {
     padding: var(--section-padding);
 }
@@ -70,11 +76,6 @@ a:active {
     text-align: var(--section-footer-align);
 }
 
-/* Footer */
-footer {
-    padding: var(--footer-padding);
-}
-
 /* Section tagline */
 .section-tagline {
     color: var(--color-primary);
@@ -82,14 +83,6 @@ footer {
     text-transform: var(--section-tagline-transform);
     font-weight: var(--font-weight-bold);
 }
-
-/* Container */
-.container {
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 
 /* Section title */
 .section-title {
@@ -106,7 +99,11 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: var(--font-weight-bold);
 }
 
-/* Root variables */
+/* Footer */
+footer {
+    padding: var(--footer-padding);
+}
+
 :root {
     --color-primary: #D73953;
     --color-black: #090909;
@@ -114,22 +111,35 @@ h1, h2, h3, h4, h5, h6 {
     --color-light-grey: #f3f3f3;
     --color-dark-grey: #353535;
     --text-color: var(--color-primary);
-    --font-family-base: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-    --font-family-title: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
+
+    /* fonts */
+    --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-title: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    /* font sizes */
     --font-size-small: 1.2rem;
     --font-size-medium: 1.6rem;
     --font-size-large: 1.8rem;
     --font-size-x-large: 2.3rem;
     --font-size-xx-large: 4.8rem;
+
+    /* font weights */
     --font-weight-regular: 400;
     --font-weight-bold: 700;
+
+    /* line heights */
     --line-height-small: 1.2;
     --line-height-base: 1.5;
     --line-height-big: 1.8;
-    --section-title-margin: 0;
-    --section-title-color: var(--color-black);
+
+    /* section alignment and padding */
     --section-header-align: center;
     --section-tagline-transform: uppercase;
+
+    --section-title-margin: 0;
+    --section-title-color: var(--color-black);
+
+    /* padding variables for task 17 */
     --section-padding: 5rem 0;
     --section-header-padding: 0 0 3rem;
     --section-body-padding: 0 0 3rem;
